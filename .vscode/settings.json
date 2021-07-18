@@ -1,0 +1,7 @@
+{
+  "eslint.packageManager": "yarn",
+  "npm.packageManager": "yarn",
+  "npm.bin": "Yarn",
+  "prettier.packageManager": "yarn",
+  "tslint.packageManager": "yarn"
+}

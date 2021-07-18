@@ -1,0 +1,45 @@
+{
+  "name": "gdmn-db",
+  "version": "1.0.0",
+  "description": "gdmn-db",
+  "private": true,
+  "main": "./dist/src/index.js",
+  "types": "./dist/definitions/index.d.ts",
+  "scripts": {
+    "clean": "shx rm -rf ./dist",
+    "build": "tsc",
+    "rebuild": "yarn clean && yarn build",
+    "watch": "tsc -w",
+    "tslint": "tslint --project .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gsbelarus/gdmn.git"
+  },
+  "keywords": [
+    "gdmn"
+  ],
+  "author": "Golden Software of Belarus, Ltd",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/gsbelarus/gdmn/issues"
+  },
+  "homepage": "https://github.com/gsbelarus/gdmn#readme",
+  "dependencies": {
+    "gdmn-internals": "file:packages/gdmn-internals",
+    "generic-pool": "^3",
+    "global": "^4.4.0",
+    "node-firebird-native-api": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/generic-pool": "^3",
+    "@types/jest": "^25",
+    "@types/node": "^14",
+    "jest": "^26",
+    "jest-junit": "^10",
+    "shx": "^0",
+    "ts-jest": "^26",
+    "typescript": "^3"
+  }
+}
